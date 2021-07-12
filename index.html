@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <button onclick="fetch('http://127.0.0.1:16732/api/v2/serverInfo').then((response) => {return response.json();}).then((data) => {console.log(data)});">Get Info</button>
+    <button onclick="fetch('http://127.0.0.1:16732/api/v2/serverInfo').then((response) => {return response.json();}).then((data) => {console.log(data)});">Get Info (127.0.0.1)</button>
+    <button onclick="fetch('http://localhost:16732/api/v2/serverInfo').then((response) => {return response.json();}).then((data) => {console.log(data)});">Get Info (localhost)</button>
     <button onclick="fetch('https://logging.googleapis.com/v2/').then((data) => {console.log(data);});">Get Google Info</button>
   </body>
 </html>
