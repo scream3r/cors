@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <button onclick="console.log(fetch('http://127.0.0.1:16732/api/v2/serverInfo'))">Get Info</button>
+    <button onclick="fetch('http://127.0.0.1:16732/api/v2/serverInfo').then((data) => {console.log(data);});">Get Info</button>
   </body>
 </html>
